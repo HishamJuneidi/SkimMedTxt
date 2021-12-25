@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>🛸 UFO Appearance Prediction! 👽</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
+</head>
+
+<body>
+ <div class="grid">
+
+  <div class="box">
+
+  <p>Medical research papers' classification to BACKGROUND, CONCLUSIONS, METHODS, OBJECTIVE, RESULTS</p>
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<button type="submit" class="btn">Predict your text report</button>
+      <textarea name="paragraph_text" placeholder="Text" required="required" cols="50" rows="10"></textarea>
+      
+    </form>
+
+  <p><strong>BACKGROUND</strong></p>
+  <p>{{ BACKGROUND_text }}</p>
+  <p><strong>METHODS</strong></p>
+   <p>{{ METHODS_text }}</p>
+   <p><strong>OBJECTIVE</strong></p>
+   <p>{{ OBJECTIVE_text }}</p>
+   <p><strong>RESULTS</strong></p>
+   <p>{{ RESULTS_text }}</p>
+   <p><strong>CONCLUSIONS</strong></p>
+   <p>{{ CONCLUSIONS_text }}</p>
+   
+   
+   
+   
+   
+
+ </div>
+</div>
+
+</body>
+</html>
