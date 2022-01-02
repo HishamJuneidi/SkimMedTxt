@@ -2,23 +2,33 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>🛸 UFO Appearance Prediction! 👽</title>
+  <title>Medical Reports classifier</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
 </head>
 
 <body>
+ 
+  <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/author">Author</a>
+    <a href="/about">About</a>
+  </div>
  <div class="grid">
 
   <div class="box">
 
-  <p>Medical research papers' classification to BACKGROUND, CONCLUSIONS, METHODS, OBJECTIVE, RESULTS</p>
+  <p><strong>Fast way to classify medical research papers using NLP</strong></p>
 
     <form action="{{ url_for('predict')}}"method="post">
-    	<button type="submit" class="btn">Predict your text report</button>
       <textarea name="paragraph_text" placeholder="Text" required="required" cols="50" rows="10"></textarea>
+      <div id="wrapper">
+        <button type="submit" class="btn">Predict your text report</button>
+      </div>
       
-    </form>
+    
+    
 
+  
   <p><strong>BACKGROUND</strong></p>
   <p>{{ BACKGROUND_text }}</p>
   <p><strong>METHODS</strong></p>
