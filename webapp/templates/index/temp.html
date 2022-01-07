@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Reports classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
+</head>
+
+<body>
+ 
+  <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/author">Author</a>
+    <a href="/about">About</a>
+  </div>
+ <div class="grid">
+
+  <div class="box">
+
+  <p><strong>Fast way to classify medical research papers using NLP</strong></p>
+
+    <form action="{{ url_for('predict')}}"method="post">
+      <textarea name="paragraph_text" placeholder="Text" required="required" cols="50" rows="10"></textarea>
+      <div id="wrapper">
+        <button type="submit" class="btn">Predict your text report</button>
+      </div>
+      
+    
+    
+
+  
+  <p><strong>BACKGROUND</strong></p>
+  <p>{{ BACKGROUND_text }}</p>
+  <p><strong>METHODS</strong></p>
+   <p>{{ METHODS_text }}</p>
+   <p><strong>OBJECTIVE</strong></p>
+   <p>{{ OBJECTIVE_text }}</p>
+   <p><strong>RESULTS</strong></p>
+   <p>{{ RESULTS_text }}</p>
+   <p><strong>CONCLUSIONS</strong></p>
+   <p>{{ CONCLUSIONS_text }}</p>
+   
+   
+   
+   
+   
+
+ </div>
+</div>
+
+</body>
+</html>

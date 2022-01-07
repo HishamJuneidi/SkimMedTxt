@@ -10,8 +10,8 @@ body {
 }
 
 input {
-	min-width: 500px;
-	min-height: 200px;
+	min-width: 400px;
+	min-height: 150px;
 }
 
 .grid {
@@ -34,8 +34,8 @@ input {
   }
 
   #wrapper {
-	width: 100%;
-	height: 40px;
+	width: 90%;
+	height: 30px;
 	border: 1px solid black;
 	display: flex;
 	align-items: center;

@@ -453,7 +453,8 @@ class SkimMedText:
     model_1_results = calculate_results(y_true=val_labels_encoded,
                                         y_pred=model_1_preds)
     model_1_results
-
+    global mdlAcc
+    mdlAcc = str(model_1_results["accuracy"])
 
 
     cm = confusion_matrix(val_labels_encoded, model_1_preds)
@@ -489,6 +490,9 @@ class SkimMedText:
 
   def predictTxt(self,txt):
     return model_1.predict([str(txt)])
+  
+  def acc(self):
+    return mdlAcc
 
 
 

@@ -1,13 +1,181 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>hisham</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
-</head>
+<title>Author</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-<body>
-<h1>Hisham</h1>
+body {
+            background-color: rgb(248, 246, 246);
+            color: #333;
+            font: 1.5em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        .main-nav {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            outline: thick double #0a0a0a;
+        }
+
+        .main-nav a {
+            padding: .5em 1em;
+            display: block;
+            
+
+        }
+
+        .push {
+            margin-left: auto;
+        }
+  
+        .bolded { font-weight: bold; }
+</style>
+<body class="w3-light-grey">
+  <nav >
+    <ul class="main-nav">
+        <li><a class="active" href="/">Home</a></li>
+        <li><a class="active" href="/about">About</a></li> 
+        <li class="push"><a href="/author">Author</a></li>
+    </ul>
+  </nav> 
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+      <h2>Hisham Juneidi</h2>
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="https://i.ibb.co/wMm49jL/Hisham-Pic.jpg" style="width:100%" alt="Avatar">
+            
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Data Science</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Stamford, ct</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>hishamj6@vt.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>203-979-8580</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Java</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>AWS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Tenserflow</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Arabic</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Fairfield University intern</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Working on a data analysis project for COVID-19 prediction.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Cellink Co-op</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Dec 2018</h6>
+          <p>Created J-unit tests using Google’s C++ framework to test all functions and report any unexpected
+            behavior for the Cellink’s Bio X printer.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Medicasoft intern</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - Sep 2018</h6>
+          <p>
+            <ul>
+              <li>Implemented a front-end to transmit user credentials information to MedicaSoft’s AWS servers.</li>
+              <li>Used AWS Lambda and DynamoDB to store users ‘authentications</li>
+              <li>Used Angular 6 and Postman tools for front-end and unit testing</li>
+            </ul>  
+          </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Fairfield University 3.9 / 4.0 GPA</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>
+            M.S. in Data Science
+            <ul>
+              <li>Data Mining | Machine Learning | Database</li>
+              
+            </ul>  
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Virginia Tech 3.2 / 4.0 GPA</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - May 2020</h6>
+          <p>
+            B.S. in Computer Science
+            <ul>
+              <li>Undergraduate research assistant</li>
+              <li>Dean’s list in Spring 2019 , Fall 2019, Spring 2020</li>
+            </ul>  
+          </p>
+          <hr>
+        </div>
+       
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+
 </body>
 </html>

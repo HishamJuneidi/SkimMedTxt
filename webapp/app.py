@@ -58,7 +58,7 @@ def predict():
   
     return render_template(
          "index/index.html", 
-        #  Summery_text="",
+          mdlAcc_text= str(round(float(mdl.acc()), 2)) + "%",
          BACKGROUND_text=results['BACKGROUND'],
          METHODS_text=results['METHODS'],
           OBJECTIVE_text=results['OBJECTIVE'], 
@@ -90,5 +90,9 @@ def predict():
 @app.route("/author", methods=['GET'])
 def author():
     return render_template('author/author.html')
+
+@app.route("/about", methods=['GET'])
+def about():
+    return render_template('about/about.html')
 if __name__ == "__main__":
     app.run(debug=True)
