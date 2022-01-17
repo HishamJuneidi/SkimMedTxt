@@ -20,7 +20,7 @@ clang==5.0
 click==8.0.3
 cryptography==3.4.7
 cycler==0.10.0
-dataclasses==0.8
+dataclasses==0.6
 decorator==4.4.2
 defusedxml==0.7.1
 distlib==0.3.2
